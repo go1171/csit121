@@ -1,0 +1,14 @@
+.navigation{border: 2px solid black;}
+main{margin-top: 20px;}
+.form{margin-top: 10px;}
+table{background-color: black;text-align: center;}
+th{background-color: whitesmoke;}
+.S{background-color:rgb(255, 50, 50);}
+.A{background-color:orange;}
+.B{background-color:yellow;}
+.C{background-color:limegreen;}
+.D{background-color:lightskyblue;}
+.F{background-color:orchid;}
+.WHY{background-color: darkgrey;}
+.image {width: 100%;}
+.image_box{width: 256px; height: 192px;}
