@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Example - [Space]</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- your actual favicon.ico or favicon.svg -->
+    <link rel="icon" href="favicon.ico" type="image/svg+xml">
+</head>
+<body>
+    <header>
+        <h1 id="page-title">Web Standards</h1>
+    </header>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="page1.html">JPG Example</a>
+            <a href="page2.html">PNG Example</a>
+            <a href="page3.html" class="current">GIF Example</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    </nav>
+    <main>
+        <h2>GIF Format Example</h2>
+        
+        <!-- The actual image info -->
+        <img src="revolving-globe_orig.gif" alt="A revolving globe of the Earth">
+        
+        <!-- Description section -->
+        <section>
+            <h3>About This Image</h3>
+            <p>A animated image of a revolving globe of the Earth. The globe is revolving counterclockwise.</p>
+        </section>
+        
+        <!-- Format explanation section -->
+        <section>
+            <h3>Why GIF Format?</h3>
+            <p>GIF allow for small animated images without using too much space.</p>
+        </section>
+        
+        <!-- Image source/credit -->
+        <div>
+            <!-- OR for non-original images: -->
+            <p>Image source: <a href="https://www.atlantaboneandjoint.com/medicaltourism.html" 
+                  target="_blank">atlantaboneandjoint.com</a></p> <!-- Not a Google link -->
+            <p>I was not able to get the direct image link because it auto downloads and closes but it can be found in the page.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p class="copywrite">&copy; 2026 Xavier Gonzalez - CSIT 121 All Rights Reserved</p>
+    </footer>
+</body>
+</html>

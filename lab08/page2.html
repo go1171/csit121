@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNG Example - [Space]</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- your actual favicon.ico or favicon.svg -->
+    <link rel="icon" href="favicon.ico" type="image/svg+xml">
+</head>
+<body>
+    <header>
+        <h1 id="page-title">Web Standards</h1>
+    </header>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="page1.html">JPG Example</a>
+            <a href="page2.html" class="current">PNG Example</a>
+            <a href="page3.html">GIF Example</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    </nav>
+    <main>
+        <h2>PNG Format Example</h2>
+        
+        <!-- The actual image info -->
+        <img src="3c04b780-6335-499e-86fe-60f12682d31e.png" alt="Image of Tsuchineshan-ATLAS" id="image_2">
+        
+        <!-- Description section -->
+        <section>
+            <h3>About This Image</h3>
+            <p>Comet Tsuchineshan-ATLAS visible from Baltimore on Octorber 18 2024. This image was taken at the Howard County Conservancy.</p>
+        </section>
+        
+        <!-- Format explanation section -->
+        <section>
+            <h3>Why PNG Format?</h3>
+            <p>PNG format works perfectly for this image 
+               because it can support millions of colors with smooth gradients. 
+               The PNG uses lossless compression making the image look good without losing quality.</p>
+        </section>
+        
+        <!-- Image source/credit -->
+        <div>
+            <p>Image source: Original photo by Xavier Gonzalez</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p class="copywrite">&copy; 2026 Xavier Gonzalez - CSIT 121 All Rights Reserved</p>
+    </footer>
+</body>
+</html>

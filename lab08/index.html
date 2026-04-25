@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Standards</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- your actual favicon.ico or favicon.svg -->
+    <link rel="icon" href="favicon.ico" type="image/svg+xml">
+</head>
+<body>
+    <header>
+        <h1 id="page-title">Web Standards</h1>
+    </header>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" class="current">Home</a>
+            <a href="page1.html">JPG Example</a>
+            <a href="page2.html">PNG Example</a>
+            <a href="page3.html">GIF Example</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    </nav>
+    <main>
+        <article>
+            <h2>Lab 2</h2>
+            <p>The assignment was very straightforward with the directions provided.
+            The reference material I used helped me quickly format the HTML and build the page. 
+            The hardest thing for me was expressing my thoughts in this reflection.
+            I don't currently have any questions about the assignment, and I look forward to learning more as I progress through the class.</p>
+            <h2>Lab 3</h2>
+            <p>In this assignment I learned how to style a HTML document using CSS. 
+            CSS makes it easier to manage styles of the HTML document because it keeps the styling outside the HTML to make it less cluttered. 
+            Using selectors I can pick and choose which styles I want for specific pieces of text in the HTML document. 
+            With CSS I can make my HTML document look more visually appealing and easier to read for any viewer of the page. </p>
+            <h2>Lab 4</h2>
+            <p>Creating this small website was a good exercise in applying beginner web design best practices, particularly regarding CSS and accessibility. 
+                Selecting the theme was one of the most enjoyable parts of the project, allowing for a degree of creativity. 
+                But translating the theme into an accessible design was challenging. 
+                Specifically, determining the appropriate text colors to ensure adequate contrast and readability took careful consideration. 
+                Similarly, finding a background image that complemented the theme without overwhelming the content proved to be more difficult than expected. 
+                For the visual elements, I used a combination of my own original photos and carefully selected images from Google Images to build the site's aesthetic. 
+                Looking back on the process, there are certainly areas where I could expand the project's scope. 
+                If I had more time, I would have integrated a wider variety of pictures.
+                Additionally, I would have provided much more detailed, accessible descriptions and alt text for each image to further align with accessibility standards. 
+                Ultimately, navigating these design choices helped solidify my understanding of how CSS shapes the user experience.  </p>
+        </article>
+
+        <h2>Things I learned</h2>
+        <ol>
+            <li>I learned how to structure a HTML document</li>
+            <li>I learned how to use heading formatters in HTML</li>
+        </ol>
+        
+        <h3>Things I learned from</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Where I learned HTML semantics</a></li>
+            <li><a href="https://www.w3schools.com/html/html_links.asp">Where I learned to create linked text</a></li>
+        </ul>
+    </main>
+    <footer>
+        <p class="copywrite">&copy; 2026 Xavier Gonzalez - CSIT 121 All Rights Reserved</p>
+    </footer>
+</body>
+</html>
