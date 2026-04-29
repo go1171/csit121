@@ -64,13 +64,61 @@
         <building>216</building>
         <room>32</room>
     </employee>
-     <employee id="be137">
+    <employee id="be137">
         <firstname>DhanPal</firstname>
         <lastname>Singh</lastname>
         <title>Engineering Manager</title>
         <division>Materials</division>
         <building>327</building>
         <room>21</room>
+    </employee>
+    <employee id="be138">
+        <firstname>Bob</firstname>
+        <lastname>Bobingson</lastname>
+        <title>Engineering</title>
+        <division>Materials</division>
+        <building>327</building>
+        <room>31</room>
+    </employee>
+    <employee id="be139">
+        <firstname>Mike</firstname>
+        <lastname>Miller</lastname>
+        <title>Engineering</title>
+        <division>Materials</division>
+        <building>327</building>
+        <room>34</room>
+    </employee>
+    <employee id="be140">
+        <firstname>Jackson</firstname>
+        <lastname>Darby</lastname>
+        <title>Engineering</title>
+        <division>Materials</division>
+        <building>327</building>
+        <room>43</room>
+    </employee>
+    <employee id="be141">
+        <firstname>Jake</firstname>
+        <lastname>White</lastname>
+        <title>Engineering</title>
+        <division>Materials</division>
+        <building>327</building>
+        <room>48</room>
+    </employee>
+    <employee id="be142">
+        <firstname>Bill</firstname>
+        <lastname>Robinson</lastname>
+        <title>Engineering</title>
+        <division>Materials</division>
+        <building>327</building>
+        <room>32</room>
+    </employee>
+    <employee id="be143">
+        <firstname>Grug</firstname>
+        <lastname>Grug</lastname>
+        <title>Grug</title>
+        <division>Materials</division>
+        <building>327</building>
+        <room>16</room>
     </employee>
 
 </employees>
