@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>Reads the XML data using JavaScript</title>
 
@@ -7,6 +7,7 @@
         table {
             border-collapse: collapse;
             width: 100%;
+            /* Ensure it transitions nicely if needed, but defaults to visible when populated */
         }
 
         th,
@@ -35,7 +36,7 @@
             border-radius: 30px;
             font-size: 30px;
             width: 500px;
-            cursor: pointer; /* Added so it looks like a clickable button */
+            cursor: pointer;
         }
 
         .button:hover {
@@ -45,43 +46,46 @@
     </style>
 
     <script>
-        // New function to handle the toggle logic
-        function toggleData() {
+        // Track whether the XML data has already been fetched
+        let isDataLoaded = false;
+
+        function toggleEmployeeData() {
             let btn = document.getElementById("toggleBtn");
             let table = document.getElementById("id");
 
-            // Check current button state
-            if (btn.innerText.trim() === "Get Employee Data") {
-                loadXMLDoc(); // Fetch or show data
+            // Check if the table is hidden or hasn't been loaded yet
+            if (table.style.display === "none" || !isDataLoaded) {
+                
+                // If data isn't loaded, fetch it
+                if (!isDataLoaded) {
+                    let xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function () {
+                        // Request finished and response is ready and Status is "OK"
+                        if (this.readyState == 4 && this.status == 200) {
+                            empDetails(this);
+                            isDataLoaded = true;
+                            table.style.display = "table"; // Show table
+                        }
+                    };
+
+                    // employee.xml is the external xml file
+                    xmlhttp.open("GET", "employee.xml", true);
+                    xmlhttp.send();
+                } else {
+                    // Data is already loaded, just reveal the table
+                    table.style.display = "table";
+                }
+                
+                // Update button text
                 btn.innerText = "Close Employee Data";
-                table.style.display = "table"; // Ensure the table is visible
+                
             } else {
-                // Hide the table and revert button text
+                // Table is currently visible, so hide it
                 table.style.display = "none";
+                
+                // Revert button text
                 btn.innerText = "Get Employee Data";
             }
-        }
-
-        function loadXMLDoc() {
-            let table = document.getElementById("id");
-            
-            // Prevent fetching the XML file again if the data is already loaded
-            if (table.innerHTML.trim() !== "") {
-                return; 
-            }
-
-            let xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function () {
-                // Request finished and response 
-                // is ready and Status is "OK"
-                if (this.readyState == 4 && this.status == 200) {
-                    empDetails(this);
-                }
-            };
-
-            // employee.xml is the external xml file
-            xmlhttp.open("GET", "employee.xml", true);
-            xmlhttp.send();
         }
 
         function empDetails(xml) {
@@ -97,10 +101,28 @@
             // Start to fetch the data by using TagName 
             for (i = 0; i < x.length; i++) {
                 table += "<tr><td>" +
-                    x[i].getElementsByTagName("firstname")[0]
-                        .childNodes[0].nodeValue + "</td><td>" +
-                    x[i].getElementsByTagName("lastname")[0]
-                        .childNodes[0].nodeValue + "</td><td>" +
-                    x[i].getElementsByTagName("title")[0]
-                        .childNodes[0].nodeValue + "</td><td>" +
-                    x[i].getElementsBy
+                    x[i].getElementsByTagName("firstname")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("lastname")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("division")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("building")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("room")[0].childNodes[0].nodeValue + "</td></tr>";
+            }
+
+            // Print the xml data in table form
+            document.getElementById("id").innerHTML = table;
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <button type="button" id="toggleBtn" class="button" onclick="toggleEmployeeData()">
+            Get Employee Data
+        </button>
+    </center>
+
+    <br><br>
+    <table id="id" style="display: none;"></table>
+</body>
+</html>
