@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How is it used?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>How is it used?</h1>
+    </header>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="what_is_it.html">What is it?</a>
+            <a href="why_is_it_important.html">Why is it important?</a>
+            <a href="how_is_it_used.html" class="current">How is it used?</a>
+            <a href="sources.html">Sources</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Sections</span>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    </nav>
+    <main>
+        <section>
+            <h2>How is Accessible Rich Internet Applications (WAI-ARIA) used?</h2>
+            <p>
+                Whenever possible, prioritize native HTML elements like buttons and form controls, as they possess built-in accessibility features that assistive technologies immediately recognize.
+                ARIA should be reserved for instances where native tags cannot replicate a specific behavior, such as when managing dynamic content or building complex, custom widgets.
+                This framework functions through three core pillars: roles, states, and properties, which collectively define an element's identity and current condition.
+                By implementing these components correctly, you ensure that rich internet applications remain interpretable for all users, even with disabilities.
+                Using the right mix of HTML and ARIA creates a more robust and inclusive digital experience.
+            </p>
+            <p class="code_examples_top"> Here are some examples:</p>
+            <p class="code_examples">&lt;div role="button" tabindex="0" aria-pressed="false"&gt;Click Me&lt;/div&gt;</p>
+            <p class="code_examples_bottom">&lt;button aria-label="Close"&gt;X&lt;/button&gt;</p>
+        </section>
+    </main>
+</body>
+</html>

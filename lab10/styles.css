@@ -1,0 +1,56 @@
+body {
+  font-family: "Lato", sans-serif; 
+  background-image: url("background.png"); 
+  background-repeat:no-repeat; background-size: 95%; 
+  background-position-y: 5%; background-position-x: 100%; 
+  background-color:rgb(229, 239, 255)
+}
+
+p {width: 45%;}
+
+.code_examples_top{margin-bottom: 1px;}
+.code_examples{margin: 1px;}
+.code_examples_bottom{margin-top: 1px;}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #afafaf;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.current {font-weight: bold; background-color: darkorchid;}
+
+.bold_text {font-weight: bold}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

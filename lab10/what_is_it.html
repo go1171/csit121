@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What is it?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>What is it?</h1>
+    </header>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="what_is_it.html" class="current">What is it?</a>
+            <a href="why_is_it_important.html">Why is it important?</a>
+            <a href="how_is_it_used.html">How is it used?</a>
+            <a href="sources.html">Sources</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Sections</span>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    </nav>
+    <main>
+        <section>
+            <h2>What is Accessible Rich Internet Applications (WAI-ARIA)?</h2>
+            <p>
+                WAI-ARIA is a technical specification that provides a framework to improve the accessibility and interoperability of web content and applications.
+                It is primarily for developers to create custom widgets and other web application components with high accessibility.
+                Such as providing full keyboard support that may be implemented in a device-independent way.
+                A few examples are telephones, handheld devices, e-book readers, and televisions.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Why is it important?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Why is it important?</h1>
+    </header>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="what_is_it.html">What is it?</a>
+            <a href="why_is_it_important.html" class="current">Why is it important?</a>
+            <a href="how_is_it_used.html">How is it used?</a>
+            <a href="sources.html">Sources</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Sections</span>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    </nav>
+    <main>
+        <section>
+            <h2>Why is Accessible Rich Internet Applications (WAI-ARIA) important?</h2>
+            <p>
+                WAI-ARIA bridges the gap between modern, dynamic web design and assistive technologies by providing essential metadata that standard HTML sometimes lacks.
+                By implementing specific roles, states, and properties, developers can communicate the function and behavior of complex UI components to screen readers.
+                This framework is important for interactive elements that don't have a native HTML equivalent, ensuring they are perceivable to all users even with disabilities.
+                It allows for seamless, real-time content updates and navigation without relying on visual cues alone.
+                Through these enhancements, WAI-ARIA transforms a potentially confusing interface into a predictable and accessible digital experience.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

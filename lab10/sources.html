@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sources</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sources</h1>
+    </header>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="what_is_it.html">What is it?</a>
+            <a href="why_is_it_important.html">Why is it important?</a>
+            <a href="how_is_it_used.html">How is it used?</a>
+            <a href="sources.html" class="current">Sources</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Sections</span>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    </nav>
+    <main>
+        <dl>
+            <dt class="bold_text">Accessible Rich Internet Applications (WAI-ARIA) 1.2. (2023, June 6).</dt>
+            <dt>W3.org.</dt>
+            <dd><a href="https://www.w3.org/TR/wai-aria-1.2">https://www.w3.org/TR/wai-aria-1.2</a></dd>
+        </dl>
+        <dl>
+            <dt class="bold_text">A Beginner’s Guide to WAI-ARIA: Making Web Applications Accessible. (2024, Nov 5).</dt>
+            <dt>medium.com.</dt>
+            <dd><a href="https://medium.com/@ignatovich.dm/a-beginners-guide-to-wai-aria-making-web-applications-accessible-6c29a996e064">https://medium.com/@ignatovich.dm/a-beginners-guide-to-wai-aria-making-web-applications-accessible-6c29a996e064</a></dd>
+        </dl>
+        <dl>
+            <dt class="bold_text">What is ARIA (WAI‑ARIA)? Accessible Rich Internet Applications Explained. (2026, Apr 30).</dt>
+            <dt>medium.com.</dt>
+            <dd><a href="https://www.levelaccess.com/blog/wai-aria-explained-a-guide-to-accessible-rich-internet-applications">https://www.levelaccess.com/blog/wai-aria-explained-a-guide-to-accessible-rich-internet-applications</a></dd>
+        </dl>
+        <dl>
+            <dt class="bold_text">Background image source.</dt>
+            <dt>web.dev</dt>
+            <dd><a href="https://web.dev">https://web.dev</a></dd>
+        </dl>
+    </main>
+</body>
+</html>
