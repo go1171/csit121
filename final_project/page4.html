@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lessons</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pixel_forge_icon.png" type="image/svg+xml">
+</head>
+<body>
+    <nav id="sidenav">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="page1.html">Our Games</a>
+            <a href="page2.html">About Us</a>
+            <a href="page3.html">Connect</a>
+            <a href="page4.html" class="current">Lessons</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776; Navigation</span>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    </nav>
+    <nav id="topnav">
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0)" id="navbar"> Navigation:</a>
+            <a href="index.html">Home</a>
+            <a href="page1.html">Our Games</a>
+            <a href="page2.html">About Us</a>
+            <a href="page3.html">Connect</a>
+            <a href="page4.html" class="current">Lessons</a>
+            <a href="javascript:void(0);" class="icon" onclick="openTopNav()">&#9776;</a>
+        </div>
+        <script>
+        function openTopNav() {
+            if (document.getElementById("myTopnav").style.height === "100%") {
+                document.getElementById("myTopnav").style.height = "48px";
+            } else {
+                document.getElementById("myTopnav").style.height = "100%";
+            } 
+        }
+        </script>
+    </nav>
+    <main>
+        <article>
+            <h1>Lessons Learned/Reflection </h1>
+            <p>I enjoyed building this website, though it was a bit frustrating at times to get everything to look and function exactly how I wanted. My main personal challenge was getting the site layout to center properly across most screen resolutions. To handle the different screen sizes, I successfully set up two distinct navigation systems tailored for varying resolutions. Ultimately, testing the finished site across multiple devices and browsers went smoothly, and I did not notice any major differences in how it displayed.</p>
+            <p>Throughout this course, I developed a strong foundational understanding of UI/UX principles while learning how to build solid page layouts using HTML and CSS. I also learned how to embed different types of web media, structure data with tables, and collect user input by building forms. Adding to the site's functionality, I learned how to create an interactive menu and how to write XML. Finally, taking the project from a local build to a live environment taught me the complete process of publishing websites directly to the web.</p>
+        </article>
+        <article>
+            <h2>AI use</h2>
+            <p>Google Gemini AI Pro</p>
+            <p>AI was used to generate the content of this web site but none of the code I just asked it to make the full site to take the content.</p>
+            <p>AI conversation link: <a href="https://gemini.google.com/share/99caf0cf0ddd" class="external-link">https://gemini.google.com/share/99caf0cf0ddd</a></p>
+            <p>project before AI: <a href="original/index.html" class="external-link">HERE</a></p>
+        </article>
+    </main>
+</body>
+</html>
