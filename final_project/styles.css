@@ -75,7 +75,7 @@ td {
   border-bottom: 2px solid #f2f2f2;
 }
 
-@media (min-width: 860px) {
+@media (min-width: 1000px) {
     .text_section {
       width: 500px;
     }
@@ -119,10 +119,10 @@ td {
   }
 
   .logo-image {
-    left: 10%;
-    width: 400px;
+    padding-left: 30px;
+    width: 90%;
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
     position: relative;
   }
 }
@@ -168,14 +168,14 @@ td {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .topnav a.icon {
     float: right;
     display: block;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .topnav {
     position: relative;
   }
