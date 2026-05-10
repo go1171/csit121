@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | Pixel Forge Studios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pixel_forge_icon.png" type="image/svg+xml">
+</head>
+<body>
+    <nav id="sidenav">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="page1.html">Our Games</a>
+            <a href="page2.html" class="current">About Us</a>
+            <a href="page3.html">Contact</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776; Navigation</span>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    </nav>
+    <nav id="topnav">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" id="navbar"> Navigation:</a>
+            <a href="index.html">Home</a>
+            <a href="page1.html">Our Games</a>
+            <a href="page2.html" class="current">About Us</a>
+            <a href="page3.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="openTopNav()">&#9776;</a>
+        </div>
+        <script>
+        function openTopNav() {
+            if (document.getElementById("myTopnav").style.height === "100%") {
+                document.getElementById("myTopnav").style.height = "48px";
+            } else {
+                document.getElementById("myTopnav").style.height = "100%";
+            } 
+        }
+        </script>
+    </nav>
+    <main>
+        <article>
+        <h1>The Studio Ethos</h1>
+            <p>Founded on the principle that gaming is a universal medium, PixelForge Studios operates as a highly collaborative indie environment. We reject standard assembly-line development in favor of highly unified cross-discipline teamwork.</p>
+        </article>
+        <article>
+        <h2>Our Collaborative Pillars</h2>
+            <p>Every unforgettable moment in our games relies on the tight integration of our four core teams:</p>
+            <ul>
+                <li>Narrative Writers: Crafting the intricate dialogues, branching storylines, and emotional anchors that drive the player forward.</li>
+                <li>Visual Artists: Designing the evocative pixel-art worlds, character sprites, and accessible high-contrast interfaces.</li>
+                <li>Engineers & Developers: Building the experimental mechanics and ensuring flawless, responsive performance across platforms.</li>
+                <li>Composers & Audio Designers: Scoring memorable, dynamic soundtracks alongside spatial audio cues designed to aid navigation.</li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>© 2026 PixelForge Studios. All rights reserved.</p>
+    </footer>
+</body>
+</html>
