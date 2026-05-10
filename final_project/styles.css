@@ -168,14 +168,14 @@ td {
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 550px) {
   .topnav a.icon {
     float: right;
     display: block;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 550px) {
   .topnav {
     position: relative;
   }
